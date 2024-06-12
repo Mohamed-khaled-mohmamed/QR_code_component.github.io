@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@400;700&display=swap');
+
+
+/* 
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+/* 
+
+> 💡 These are just the design sizes. Ensure 
+content is responsive and meets WCAG requirements 
+by testing the full range of screen sizes from 
+320px to large screens.
+
+*/
+
+
+/* CSS REST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+*::after,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-Light-gray: hsl(212, 45%, 89%);
+  --color-Grayish-blue: hsl(220, 15%, 55%);
+  --color-Dark-blue: hsl(218, 44%, 22%);
+}
+
+
+body {
+  background-color: var(--color-Light-gray);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background-color: var(--color-white);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 1rem;
+  box-shadow:1px 1px 6px rgba(0, 0, 0 , 0.05) ;
+}
+.container img{
+  max-width: 100%;
+  border-radius: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.container h1{
+  text-align: center;
+  color: var(--color-Dark-blue);
+  font-size: 1.5em;
+  margin-bottom: 1.25rem;
+}
+
+.container p{
+  text-align: center;
+  color: var(--color-Grayish-blue);
+}
+
+@media (min-width:370px) {
+  .container{
+    width: 300px;
+  }
+}
